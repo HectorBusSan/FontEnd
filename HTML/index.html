@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav__header">
+            <h2 class="title_logo">Pasteles</h2>
+            <ul class="nav__list">
+                <a href="#home"><li class="nav__item">Home</li></a>
+                <a href="#Formato"><li class="nav__item">Formato</li></a>
+                <a href="#Pedido"><li class="nav__item">Pedido</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="intro" id="home">
+            <h1 class="title">Pasteleria Unica</h1>
+            <p title="info">Ubicada en San Acasio numero de telefono: 276788726</p>
+            <p>Horario de atención de Lunes a Viernes 8:00 a 7:00</p>
+        </div>
+        <article class="view__cliente">
+            <div class="Pasteles">
+                <div class="options">
+                    <h2 class="Title">Visión Cliente</h2>
+                    <h2 class="title">Pasteles</h2>
+                    <h3 class="subtitle">Opciones:</h3>
+                    <ul class="lista__pasteles">
+                        <li class="item__pastel">Pastel de Chocolate <p>$200</p></li>
+                        <li class="item__pastel">Pastel de Tres leches <p>$300</p></li>
+                        <li class="item__pastel">Pastel de Limon <p>$180</p></li>
+                        <li class="item__pastel">Pastel de Cajeta <p>$300</p></li>
+                        <li class="item__pastel">Pastel de Cacahuate <p>$180</p></li>
+                    </ul>
+                </div>
+                <div class="options">
+                    <h3 class="subtitle">Adornos</h3>
+                    <ul class="lista__pasteles">
+                        <li class="item__pastel">Chispas <p>$10</p> </li>
+                        <li class="item__pastel">Nueces <p>$15</p> </li>
+                        <li class="item__pastel">Cajeta <p>$10</p> </li>
+                        <li class="item__pastel">Naranja <p>$8</p> </li>
+                        <li class="item__pastel">Gomitas <p>$18</p> </li>
+                    </ul>   
+                </div>
+
+            </div>
+            <div class="selección__pasteles">
+                
+                <form class="formato" action="" id="Formato">
+                    <h2 class="title">Selecciona tu nuevo pastel</h2>
+                    <h2 title="">Información Personal</h2>
+                    <label for="nombre">Introducir Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <label for="nombre">Introducir Numero de Contacto</label>
+                    <input type="number" name="numero" id="numero" placeholder="Numero Celular">
+                    <label for="nombre">Introducir Correo electronico</label>
+                    <input type="mail" name="correo" id="correo" placeholder="Mail">
+                  
+
+
+                    <h2 class="title">Selecciona los sabores</h2>
+                    <p class="info"> Tu pastel puede ser 1 o mas...</p>
+
+                    <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+                    <label for="topping1">Pastel de Chocolate $200</label>
+                    
+                    <input type="checkbox" id="topping2" name="topping3" value="Leches">
+                    <label for="topping2">Pastel de Tres Leches $200</label>
+                    
+                    <input type="checkbox" id="topping3" name="topping3" value="Limon">
+                    <label for="topping3">Pastel de Limon $180</label>
+
+                    <input type="checkbox" id="topping4" name="topping4" value="Cajeta">
+                    <label for="topping4">Pastel de Cajeta $300</label>
+                    
+                    <input type="checkbox" id="topping5" name="topping5" value="Cacahuate">
+                    <label for="topping5">Pastel de Cacahuate $200</label>
+
+                    <h2 class="title">Selecciona los sabores</h2>
+                    <p class="info"> Tu pastel puede ser 1 o mas...</p>
+
+                    <input type="checkbox" id="complemento1" name="complemento1" value="Chispitas">
+                    <label for="complemento1">Chispas $10</label>
+                    
+                    <input type="checkbox" id="complemento2" name="complemento3" value="Leches">
+                    <label for="complemento2">Nueces $15</label>
+                    
+                    <input type="checkbox" id="complemento3" name="complemento3" value="Limon">
+                    <label for="complemento3">Cajeta $10</label>
+
+                    <input type="checkbox" id="complemento4" name="complemento4" value="Cajeta">
+                    <label for="complemento4">Naranja $8</label>
+                    
+                    <input type="checkbox" id="complemento5" name="complemento5" value="Cacahuate">
+                    <label for="complemento5">Gomitas $18</label>
+                    
+                    <label for="cantidad">Introducir cantidad de pasteles</label>
+                    <input type="number" name="cantidad" id="cantidad" placeholder="1..2..3">
+
+                    <a id="button">Enviar</a>
+                    <input type="reset" id="reset">
+                </form>
+                
+            </div>
+
+        </article>
+        <article class="view__enterprise" id="Pedido">
+            <div class="informe" id="informe">
+                <h2 class="Title">Visión Pastelero</h2>
+                <h2 class="title">Pedidos:</h2>
+                <div class="pedido">
+                    <h3 id="nameC">Juan</h2>
+                    <h4>Contacto:</h4>
+                    <p id="numberC">273128397</p>
+                    <p class="correoC">jkdna@</p>
+                    <h4>Pastel Sabor(es)</h3>
+                    <p id="saborC">
+                        chocolate
+                    </p>
+                    <h4>Ingredientes:</h4>
+                    <p id="aditamentosC">
+                        gomitas
+                    </p>
+                    <h4>Cantidad:</h4>
+                    <p id="numeroC">
+                        1
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
