@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="rigth">
+            <div class="circuls">
+                <div class="blue"></div>
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                    <input type="text" id="pokeInput" placeholder="Pokemon">
+                    <button class="button" id="button">Pokemon</button>
+            </div>
+            <div class="container__pokemon">
+                <img src="img/pokebola.png" alt="" class="pokemon__img" id="pokeImg">
+            </div>
+            <div class="controls">
+                <div class="rigth__control">
+                    <div class="circle__button"></div>
+                    <div class="long__button dark-red"></div>
+                    <div class="long__button dark-blue"></div>
+                    <div class="pad">
+                        <div class="green__pad"></div>
+                    </div>
+                </div>
+                <div class="left__control">
+                    <div class="arrow__control">
+                        <div class="line-v"></div>
+                        <div class="line-h"></div>
+                        <div class="c__up"><span class="material-icons-sharp">
+                            expand_less
+                            </span></div>
+                        <div class="c__left"><span class="material-icons-sharp">
+                            chevron_left
+                            </span></div>
+                        <div class="c__down"><span class="material-icons-sharp">
+                            keyboard_arrow_down
+                            </span></div>
+                        <div class="c__rigth"><span class="material-icons-sharp">
+                            navigate_next
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="cylinder__1"></div>
+            <div class="cylinder__2"></div>
+            <div class="cylinder__1"></div>
+        </div>
+        <div class="left">
+            <div class="empty"></div>
+            <div class="pad__powers">
+                <div class="data__powers">
+                    <div class="type" id="pokeType">Tipo: </div>
+                    <div class="fraqueza" id="pokeF">Fortaleza:</div>
+                </div>
+                <div class="description__powers">
+                    <div class="power">
+                        <div class="data__power" id="hp"></div>
+                        <div class="name__power">HP</div>
+                    </div>
+                    <div class="power">
+                        <div class="data__power" id="attack"></div>
+                        <div class="name__power">attack</div>
+                    </div>
+                    <div class="power">
+                        <div class="data__power" id="defense"></div>
+                        <div class="name__power">defense</div>
+                    </div>
+                    <div class="power">
+                        <div class="data__power" id="special-attack"></div>
+                        <div class="name__power">special attack</div>
+                    </div>
+                    <div class="power">
+                        <div class="data__power" id="special-defense"></div>
+                        <div class="name__power">special defense</div>
+                    </div>
+                    <div class="power">
+                        <div class="data__power" id="speed"></div>
+                        <div class="name__power">speed</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="pad__blue">
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+                <div class="pad__blue-1"></div>
+            </div> -->
+            <div class="pad__controls">
+                <div class="control__squares-white"></div>
+                <div class="control__squares-white"></div>
+                <div class="control__squares-black"></div>
+                <div class="control__squares-black"></div>
+            </div>
+            <div class="pad__specifications">
+                <div class="pad__specification pad-rigth"><div class="altura" id="pokeAltura">Altura:</div></div>
+                <div class="pad__specification pad-left"><div class="peso" id="pokePeso">Peso:</div></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

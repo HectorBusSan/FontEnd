@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --red--container: #f00;
+    --white--container: #fff;
+}
+.container{
+    margin: 2.5% auto;
+    /* background-color: #f00; */
+    width: 70vw;
+    padding: 2rem;
+    display: flex;
+    height: 90vh;
+}
+.container__pokemon{
+    height: 220px;
+}
+img{
+    /* flex-basis: 70px; */
+    width: 180px;
+    height: 180px;
+}
+.rigth{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+    background-color: var(--red--container);
+    padding: 20px;
+    border-radius: 1rem;
+}
+.circuls{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    gap: 10px;
+}
+.circuls .blue{
+    position: relative;
+    background-color: #0bcdff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circuls .red{  
+    position: relative;
+    background-color: #ee0706;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circuls .yellow{
+    position: relative;
+    background-color: #d9dd18;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.circuls .blue::before{
+    content: '';
+    position: absolute;
+    /* background-color: #000; */
+    bottom: .5rem;
+    left: 0rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 0px 0px #fff;
+    opacity: .7;
+    /* transform: rotate(-30deg); */
+} 
+.circuls .blue::after{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+    opacity: .8;
+}
+.circuls .red::before{
+    content: '';
+    position: absolute;
+    /* background-color: #000; */
+    bottom: .5rem;
+    left: 0rem;
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 0px 0px #000;
+    opacity: .7;
+}
+.circuls .yellow::before{
+    content: '';
+    position: absolute;
+    /* background-color: #000; */
+    bottom: .4rem;
+    left: 0rem;
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 0px 0px #000;
+    opacity: .7;
+}
+.container__pokemon{
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+    box-shadow: 10px 1px 0px 0px #000, 1px 10px 0px 0px #000;
+}
+.controls{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 0;
+    padding: 20px;
+    /* background-color: #ccc; */
+    /* border-right: 1px solid #000; */
+}
+.controls .rigth__control{
+    display: grid;
+    /* background-color: #000; */
+    grid-template-columns: 30% 30% 30%;
+    gap: .5rem;
+    padding: 1rem;
+}
+.controls .rigth__control .circle__button{
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.controls .rigth__control .long__button{
+    width: 40px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 1rem;
+}
+.controls .rigth__control .long__button.dark-red{
+    background: #c70c13;
+}
+.controls .rigth__control .long__button.dark-blue{
+    background: #095378;
+}
+.controls .rigth__control .pad{
+    /* background-color: #55ab62; */
+    display: flex;
+    margin-top: .5rem;
+    grid-column: 1/ span 4;
+    /* width: 120px; */
+    height: 50px;
+    justify-content: center;
+}
+.green__pad{
+    background-color: #55ab62;
+    width: 100%;
+    height: 100%;
+}
+.left__control .arrow__control{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.arrow__control .line-v{
+    position: absolute;
+    margin: auto;
+    width: 40px;
+    height: 120px;
+    background-color: #000;
+}
+.arrow__control .line-h{
+    position: absolute;
+    top: 40px;
+    margin: auto;
+    width: 120px;
+    height: 40px;
+    background-color: #000;
+}
+.arrow__control .c__up{
+    text-align: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: .5rem;
+    /* background-color: #fff; */
+    color: #fff;
+}
+.arrow__control .c__left{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 33px;
+    top: 40px;
+    width: 40px;
+    height: 40px;
+    padding: .5rem;
+    /* background-color: #fff; */
+    color: #fff;
+}
+.arrow__control .c__down{
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: .5rem;
+    top: 80px;
+    /* background-color: #fff; */
+    color: #fff;
+}
+.arrow__control .c__rigth{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    width: 40px;
+    height: 40px;
+    padding: .5rem;
+    top: 40px;
+    right: 33px;
+    /* background-color: #fff; */
+    color: #fff;
+}
+.center{
+    width: 10%;
+    background-color: #f00;
+    border: 5px solid var(--white--container);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+.cylinder__1:first-child{
+    height: 40%;
+    border-bottom: 5px solid var(--white--container);
+}
+.cylinder__2{
+    height: 20%;
+    border-bottom: 5px solid var(--white--container);
+}
+.cylinder__1:last-child{
+    height: 40%;
+}
+.left{
+    display: grid;
+    position: relative;
+    width: 45%;
+    background-color: var(--red--container);
+    padding: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(1,1fr);
+    color: #fff;
+    border-radius: 1rem;
+}
+.empty{
+    background-color: #fff;
+    position: absolute;
+    top: -4rem;
+    right: -8rem;
+    width: 350px;
+    height: 150px;
+    border-radius: 30px;
+}
+.pad__powers{
+    display: flex;
+    margin-top: 5rem;
+    background-color: #032d29;
+    padding: 20px;
+    height: 300px;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+.pad__blue{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    gap: 5px;
+    margin-top: 10px;
+}
+.pad__blue .pad__blue-1{
+    background-color: #31a7f1;
+    border-radius: .5rem;
+}
+.pad__controls{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    width: 50%;
+}
+.pad__controls .control__squares-white{
+    margin-right: 10px;
+    background-color: #fff;
+    width: 50px;
+    height: 25px;
+    border-radius: .5rem;
+}
+.pad__controls .control__squares-black{
+    background-color: #000;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.pad__specifications{
+    display: flex;
+    background-color: #032d29;
+    padding: 20px;
+    border-radius: 1rem;
+}
+.pad-rigth{
+    flex-grow: 1;
+}
+.pad-left{
+    flex-grow: 1;
+}
+
+.pokepPlace{
+    display: flex;
+}
+#pokeInput{
+    padding: 10px;
+    width: 30%;
+    /* font-size: 18px  ; */
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    color: #000;
+}
+#button{
+    width: 20%;
+    padding: 10px;
+    outline: none;
+    border: #fff;
+    border-radius: .5rem;
+    background-color: #c70c13;
+    color: #fff;
+    transition: all 300ms;
+}
+#button:hover{
+    background-color: #fff;
+    color: #c70c13;
+}
+.description__powers{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: #f00; */
+    height: 200px;
+}
+.data__power{
+    justify-content: center;
+    width: 30px;
+    /* height: 10px; */
+    background-color: #fff;
+}
+.name__power{
+    align-items: flex-end;
+}
+.description__powers{
+    display: flex;
+    align-items: flex-end;
+}
+.power{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+#hp{
+    background-color: #011627;
+}
+#attack{
+    background-color: #F71735;
+}
+#defense{
+    background-color: #41EAD4;
+}
+#special-attack{
+    background-color: #FDFFFC;
+}
+#special-defense{
+    background-color: #FF9F1C;
+}
+#speed{
+    background-color: #8FD36D;
+}
+@media screen and (max-width: 1040px){
+    .container{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .rigth,.left{
+       width: 470px;
+    }
+    .center{
+        display: none;
+    }
+    .empty{
+        display: none;
+    }
+}
