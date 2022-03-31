@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- https://www.youtube.com/watch?v=ExWwOBGgEsI -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <header class="header">
+      <nav class="nav__header">
+          <h2 class="title_logo">Pasteles</h2>
+          <ul class="nav__list" id="navegation">
+              <a href="#home"><li class="nav__item">Home</li></a>
+              <a href="#Formato"><li class="nav__item">Formato</li></a>
+              <a href="#Pedido"><li class="nav__item">Pedido</li></a>
+          </ul>
+      </nav>
+  </header>
+  <main>
+      <div class="intro" id="home">
+      </div>
+      <article class="view__cliente">
+          <div class="Pasteles">
+              <div class="options">
+                  <h2 class="Title">Visión Cliente</h2>
+                  <h2 class="title">Pasteles</h2>
+                  <h3 class="subtitle">Opciones:</h3>
+                  <ul class="lista__pasteles" id="Lista-P">
+                      
+                  </ul>
+              </div>
+              <div class="options">
+                  <h3 class="subtitle">Adornos</h3>
+                  <ul class="lista__pasteles" id="Lista-A">
+                      
+                  </ul>   
+              </div>
+
+          </div>
+          <div class="selección__pasteles">
+              
+              <form class="formato" action="" id="Formato">
+                  <h2 class="title">Selecciona tu nuevo pastel</h2>
+                  <h2 title="">Información Personal</h2>
+                  <div class="personal" id="personal">
+                    
+                  </div>
+                  
+                
+
+                  <h2 class="title">Selecciona los sabores</h2>
+                  <p class="info"> Tu pastel puede ser 1 o mas...</p>
+                <div class="select__cake" id="select-cake">
+                  
+
+                </div>
+                  <h2 class="title">Selecciona los ingredientes</h2>
+                  <p class="info"> Tu pastel puede ser 1 o mas...</p>
+                <div class="ingredients__cake" id="ingredients-cake">
+                    
+                </div>
+                  <a id="button">Enviar</a>
+                  <input type="reset" id="reset">
+              </form>
+              
+          </div>
+
+      </article>
+      <article class="view__enterprise">
+          <div class="informe" id="informe">
+              <h2 class="Title">Visión Pastelero</h2>
+              <h2 class="title">Pedidos:</h2>
+              <div class="pedido" id="pedido">
+              </div>
+          </div>
+      </article>
+  </main>
+  </body>
+</html>
